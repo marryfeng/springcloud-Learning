@@ -15,7 +15,7 @@ public class ProviderController {
     String port;
     @RequestMapping("hi")
     public String home(@RequestParam String name){
-        return "hi"+name+" i am from"+port;
+        return "hi "+name+" i am from"+port;
 
     }
 }
