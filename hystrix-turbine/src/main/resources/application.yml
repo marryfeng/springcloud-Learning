@@ -1,0 +1,19 @@
+server:
+  port: 2222
+spring:
+  application:
+    name: hystrix-turbine
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:password@localhost:1111/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}
+turbine:
+  aggregator:
+    cluster-config: default
+  app-config: consumerservice,consumer2
+  cluster-name-expression: new String("default")
+
+
