@@ -1,0 +1,12 @@
+server:
+  port: 3333
+spring:
+  application:
+    name: microservice-zuul
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:password@localhost:1111/eureka/
+zuul:
+  routes:
+    providerservice: /pro/**
