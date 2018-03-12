@@ -1,0 +1,12 @@
+server:
+  port: 3537
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      label: master
+      profile: dev
+      uri: http://user:user@localhost:8866
+      username: user2
+      password: user2
