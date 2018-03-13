@@ -1,0 +1,18 @@
+server:
+  port: 8866
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: user
+    password: user
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/marrymayun/config-server
+
+
+
