@@ -1,0 +1,27 @@
+server:
+  port: 3535
+spring:
+  application:
+    name: config-client-autorefresh
+  cloud:
+    config:
+     discovery:
+       enabled: true
+       service-id: config-server-eurekaserver
+     label: master
+     profile: dev
+    bus:
+      trace:
+        enabled: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+management:
+  security:
+    enabled: false
