@@ -18,7 +18,8 @@ public class HelloController {
 
     @RequestMapping("/hello")
     public String hello(@RequestParam String name){
-       return  helloService.hiService(name);
+
+        return  helloService.hiService(name);
     }
 }
 
