@@ -1,8 +1,10 @@
 spring:
   application:
     name: providerservice-v1
+  zipkin:
+    base-url: http://localhost:9411
 server:
-  port: 5679
+  port: 7903
 eureka:
   client:
     serviceUrl:
